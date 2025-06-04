@@ -1,18 +1,34 @@
 {
-  "usuarios": [
+  "receitas": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Bolinho de Chuva",
+      "descricao": "Um clássico da culinária brasileira, crocante por fora e fofinho por dentro.",
+      "conteudo": "Receita simples: misture 2 xícaras de farinha, 1 de açúcar, 1 ovo e 1 de leite. Frite em óleo quente até dourar.",
+      "categoria": "Sobremesa",
+      "autor": "Chef Ana",
+      "data": "2025-03-30",
+      "imagem": "public/imagens/bolinho-chuva.png"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "Lasanha à Bolonhesa",
+      "descricao": "Camadas de massa, molho à bolonhesa e muito queijo gratinado.",
+      "conteudo": "Molho: refogue cebola, alho, carne moída e tomate pelado. Monte camadas com massa, molho e queijo. Asse 30 min.",
+      "categoria": "Prato Principal",
+      "autor": "Chef João",
+      "data": "2025-03-29",
+      "imagem": "public/imagens/lasanha.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Salmão ao Molho de Maracujá",
+      "descricao": "Salmão grelhado servido com molho cítrico de maracujá.",
+      "conteudo": "Tempere o salmão com sal, pimenta e limão. Grelhe e cubra com molho feito de polpa de maracujá, açúcar e manteiga.",
+      "categoria": "Peixe",
+      "autor": "Chef Clara",
+      "data": "2025-03-28",
+      "imagem": "public/imagens/salmao.png"
     }
   ]
 }

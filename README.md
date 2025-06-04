@@ -9,15 +9,19 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Vitor Vieira Guedes
+- Matricula: 1530244
+- Proposta de projeto escolhida: Diretório de receitas
+- Breve descrição sobre seu projeto: um diretório simples de receitas
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+## Prints da Funcionalidade
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+### Gráfico de Pizza – Categorias de Receitas
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![Pizza Chart](pizza_chart.png)
+
+### Gráfico de Barras – Publicações por Dia
+
+![Bar Chart](bar_chart.png)

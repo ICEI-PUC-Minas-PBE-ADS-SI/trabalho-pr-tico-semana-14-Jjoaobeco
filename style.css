@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    background: url("logo.png") 10px no-repeat;
+    border-bottom: solid 1px rgb(218, 204, 204);
+    background-color: #e7fc9d;
+    display: flex;
+    position: relative;
+}
+
+.botoes {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.botoes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.botoes ul li {
+    display: inline-block;
+}
+
+.botoes ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    background-color: rgb(215, 237, 148);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.botoes ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.pesquisa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+    height: 67.5vw;
+    background-image: url("/imagens/imagem-principal.png");
+    max-height: 675px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid 1px rgb(218, 204, 204);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #e7fc9d;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10%;
+    background-color: #e7fc9d;
+}
+
+.footer {
+    background-color: rgb(215, 237, 148);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.mais-vistas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.receita {
+    text-align: center;
+    flex: 1 1 300px;
+    background-color: rgb(215, 237, 148);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.receita:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .pesquisa {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .receita {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .botoes ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    main {
+        height: auto;
+        max-height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .mais-vistas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .receita {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .receita img {
+        width: 100%;
+    }
+}
+
+
+
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h3 {
+  font-size: 18px;
+  margin: 12px 0 6px;
+}
+.card p {
+  color: #666;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.popup-content img {
+  width: 100%;
+  border-radius: 12px;
+}
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.popup-content img {
+  width: 100%;
+  border-radius: 12px;
+}
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
